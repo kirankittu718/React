@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LitReads Book Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="path/to/bootstrap.css" />
+    <style>
+      .header {
+        /* CSS styles */
+      }
+      .book-list {
+        /* CSS styles */
+      }
+      footer {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      article {
+        display: grid;
+        grid-auto-flow: column;
+        padding: 10px;
+        overflow-x: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-class sticky-top" id="top">
+      <nav class="navbar bg-light">
+        <div class="container-fluid d-flex justify-content-around">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://rails-assets-us.bookshop.org/ds/images/logo.041f4577edde0efff6b67907832d4c3dfd52407b.svg"
+              alt="Logo"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <form class="d-flex position-relative mt-1" role="search">
+            <input
+              class="form-control me-2 rounded-pill"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn position-absolute end-0" type="submit">
+              <i class="fa-solid fa-magnifying-glass me-2"></i>
+            </button>
+          </form>
+          <div>
+            <a class="nav-link" href="#"
+              >Sign In <i class="fa-solid fa-cart-shopping p-3"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid justify-content-around">
+          <div class="navbar-nav">
+            <a class="nav-link" href="/bookstore clone/newbooks.html"
+              >New Books</a
+            >
+            <a class="nav-link" href="/bookstore clone/horror.html">Horror</a>
+            <a class="nav-link" href="/bookstore clone/comedy.html">Comedy</a>
+            <a class="nav-link" href="/bookstore clone/history.html">History</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images-production.bookshop.org/spree/promo_banner_slides/desktop_images/300/original/Bramble_Anniversary_Bookshop.org_2048x600.jpg?1725979445"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images-production.bookshop.org/spree/promo_banner_slides/desktop_images/301/original/TiasandPrimas_BookshopAds_Banner.jpg?1725979519"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <main class="container">
+      <section class="row mt-2">
+        <h2>New Books</h2>
+        <article class="col p-1">
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593642542.jpg?height=500&v=v2-c3343c5e2ee57ef05a6f6096fc3fe95f"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9798889830559.jpg?height=500&v=v2-82a004035a6684f4d4a52beacba69971"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593724408.jpg?height=500&v=v2-a51d5261e9543eec9c528afd0a8c81ee"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780063371361.jpg?height=500&v=v2-9cff779ced781951a66ef1a4aa20e985"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593714997.jpg?height=500&v=v2-2993d5f2cced04b073040add00000000"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9781668000267.jpg?height=500&v=v2-f4dc65bc1c3ce9d5f050bdc9ed0e3a6b"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593798607.jpg?height=500&v=v2-eca9c34f10fdfe8e52d2fe16301bb168"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780316562485.jpg?height=500&v=v2-0a101677ae3223e414f12c8dec5f310b"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593734223.jpg?height=500&v=v2-56e1e38451424d2356aaffb019246ed2"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593734223.jpg?height=500&v=v2-56e1e38451424d2356aaffb019246ed2"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593734223.jpg?height=500&v=v2-56e1e38451424d2356aaffb019246ed2"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593734223.jpg?height=500&v=v2-56e1e38451424d2356aaffb019246ed2"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593734223.jpg?height=500&v=v2-56e1e38451424d2356aaffb019246ed2"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+        </article>
+
+        <h2 class="mt-2">Horror</h2>
+        <article class="col p-1">
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593642542.jpg?height=500&v=v2-c3343c5e2ee57ef05a6f6096fc3fe95f"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9798889830559.jpg?height=500&v=v2-82a004035a6684f4d4a52beacba69971"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593724408.jpg?height=500&v=v2-a51d5261e9543eec9c528afd0a8c81ee"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780063371361.jpg?height=500&v=v2-9cff779ced781951a66ef1a4aa20e985"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593714997.jpg?height=500&v=v2-2993d5f2cced04b073040add00000000"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9781668000267.jpg?height=500&v=v2-f4dc65bc1c3ce9d5f050bdc9ed0e3a6b"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593798607.jpg?height=500&v=v2-eca9c34f10fdfe8e52d2fe16301bb168"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780316562485.jpg?height=500&v=v2-0a101677ae3223e414f12c8dec5f310b"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593734223.jpg?height=500&v=v2-56e1e38451424d2356aaffb019246ed2"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+        </article>
+
+        <h2 class="mt-2">Comedy</h2>
+        <article class="col p-1">
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9798889830559.jpg?height=500&v=v2-82a004035a6684f4d4a52beacba69971"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593724408.jpg?height=500&v=v2-a51d5261e9543eec9c528afd0a8c81ee"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780063371361.jpg?height=500&v=v2-9cff779ced781951a66ef1a4aa20e985"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593714997.jpg?height=500&v=v2-2993d5f2cced04b073040add00000000"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9781668000267.jpg?height=500&v=v2-f4dc65bc1c3ce9d5f050bdc9ed0e3a6b"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593798607.jpg?height=500&v=v2-eca9c34f10fdfe8e52d2fe16301bb168"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780316562485.jpg?height=500&v=v2-0a101677ae3223e414f12c8dec5f310b"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593734223.jpg?height=500&v=v2-56e1e38451424d2356aaffb019246ed2"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9798889830559.jpg?height=500&v=v2-82a004035a6684f4d4a52beacba69971"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593724408.jpg?height=500&v=v2-a51d5261e9543eec9c528afd0a8c81ee"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+        </article>
+        <h2 class="mt-2">History</h2>
+        <article class="col p-1">
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9798889830559.jpg?height=500&v=v2-82a004035a6684f4d4a52beacba69971"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593724408.jpg?height=500&v=v2-a51d5261e9543eec9c528afd0a8c81ee"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780063371361.jpg?height=500&v=v2-9cff779ced781951a66ef1a4aa20e985"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593714997.jpg?height=500&v=v2-2993d5f2cced04b073040add00000000"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9781668000267.jpg?height=500&v=v2-f4dc65bc1c3ce9d5f050bdc9ed0e3a6b"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593798607.jpg?height=500&v=v2-eca9c34f10fdfe8e52d2fe16301bb168"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780316562485.jpg?height=500&v=v2-0a101677ae3223e414f12c8dec5f310b"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593734223.jpg?height=500&v=v2-56e1e38451424d2356aaffb019246ed2"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9798889830559.jpg?height=500&v=v2-82a004035a6684f4d4a52beacba69971"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <div class="card" style="width: 8rem">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593724408.jpg?height=500&v=v2-a51d5261e9543eec9c528afd0a8c81ee"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer-class container-fluid text-center mt-4 bg-info">
+      <form class="newsletter-form">
+        <h3>Sign up for our Newsletter</h3>
+        <p>Tell us what books you love.</p>
+        <input type="email" name="email" placeholder="Your Email" />
+        <button type="submit" class="btn btn-primary m-2">Subscribe</button>
+      </form>
+      <button
+        type="button"
+        class="btn btn-danger btn-floating position-fixed bottom-0 end-0 rounded-circle btn-md"
+      >
+        <a href="#top" class="text-white"> <i class="fas fa-arrow-up"></i></a>
+      </button>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
